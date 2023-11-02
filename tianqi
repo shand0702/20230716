@@ -1,0 +1,29 @@
+import random
+
+# 天气类型
+WEATHERS = ['sunny', 'cloudy', 'rainy', 'snowy', 'foggy']
+
+def predict_weather():
+  """预测天气"""
+  weather = random.choice(WEATHERS)
+  print(f"今天的天气预测是:{weather}.")
+
+if __name__ == '__main__':
+  predict_weather()
+
+
+
+
+主要功能:
+
+导入 random 模块,用于随机生成天气类型
+定义 WEATHERS 列表,包含不同的天气类型字符串
+predict_weather 函数随机从 WEATHERS 列表中选择一个元素,作为预测结果打印出来
+这个代码只是通过随机函数简单地模拟了天气预测,没有考虑实际天气变化规则。
+
+如果需要更真实的预测,可以加入如下功能:
+
+使用当地历史天气数据训练模型
+考虑温度、湿度、气压等天气要素
+根据实时监测数据做短期预测
+整合多个模型进行平均运算等
